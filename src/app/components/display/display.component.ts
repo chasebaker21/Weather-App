@@ -11,6 +11,8 @@ export class DisplayComponent implements OnInit {
     city: "Los Angelas",
     conditions: "Sunny",
     temperature: 70,
+    high: 74,
+    low: 67,
     icon: ""
   }
 

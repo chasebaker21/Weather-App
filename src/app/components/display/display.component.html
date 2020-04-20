@@ -1,6 +1,12 @@
-<h2>{{weather.city}}</h2>
-<img [src]="weather.icon" style="float: left;"/>
-<p>
-  Conditions: {{weather.conditions}}<br/>
-  Temperature: {{weather.temperature}} °F<br/>
-</p>
+<body>
+    <div>
+        <h2>{{weather.city}}</h2>
+        <img [src]="weather.icon" style="float: left;"/>
+        <p>
+          Conditions: {{ weather.conditions }}<br/>
+          Temperature: {{ weather.temperature }} °F<br/>
+          High: {{ weather.high }}<br>
+          Low: {{ weather.low }}
+        </p>    
+    </div>
+</body>

@@ -19,6 +19,8 @@ export class SelectionComponent implements OnInit {
       this.weather.city = data['name']
       this.weather.conditions = data['weather'][0]['main']
       this.weather.temperature = Math.round((data['main']['temp'] - 273.15) * 1.8 + 32)
+      this.weather.high = Math.round((data ['main']['temp_max'] - 273.15) * 1.8 + 32)
+      this.weather.low = Math.round((data ['main']['temp_min'] - 273.15) * 1.8 + 32)
       this.weather.icon = this.weatherData.getIconUrl(data['weather'][0]['icon'])
 
       this.onSelection.emit(this.weather);

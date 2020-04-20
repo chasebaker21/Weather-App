@@ -4,6 +4,8 @@ export class Weather {
   city: String
   conditions: String
   temperature: number
+  high: number
+  low: number
   icon: String
 }
 
