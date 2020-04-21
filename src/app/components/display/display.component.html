@@ -1,12 +1,14 @@
 <body>
-    <div>
-        <h2>{{weather.city}}</h2>
-        <img [src]="weather.icon" style="float: left;"/>
-        <p>
-          Conditions: {{ weather.conditions }}<br/>
-          Temperature: {{ weather.temperature }} °F<br/>
-          High: {{ weather.high }}<br>
-          Low: {{ weather.low }}
-        </p>    
+  <div class="weatherApp">
+    <div class="cityInfo">
+      <h2>{{ weather.city }}</h2>
+      <p>{{ weather.conditions }}</p>
+      <div class="highLow">
+        <p>H: {{ weather.high }}</p>
+        <p>L: {{ weather.low }}</p>
+      </div>
     </div>
+    <img [src]="weather.icon" />
+    <p class="temp">{{ weather.temperature }} °F</p>
+  </div>
 </body>

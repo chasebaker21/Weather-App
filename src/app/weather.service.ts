@@ -11,6 +11,18 @@ export class WeatherService {
 
   constructor(private http: HttpClient) { }
 
+  weatherIcons: [
+    {sunny: "/assets/Weather-Icons/sunny.png"},
+    {cloudy: "/assets/Weather-Icons/cloudy.png"},
+    {partlyCloudy: "/assets/Weather-Icons/partlyCloudy.png"},
+    {rain: "/assets/Weather-Icons/rain.png"},
+    {heavyRain: "/assets/Weather-Icons/heavyRain.png"},
+    {snow: "/assets/Weather-Icons/snow.png"},
+    {snowstorm: "/assets/Weather-Icons/snowStorm.png"},
+    {thunderstorm: "/assets/Weather-Icons/thunderStorm.png"},
+    {windy: "/assets/Weather-Icons/windy.png"}
+  ];
+
   load(city: String) {
     return this.http.get(`${serviceUrl}?q=${city}&APPID=${apiKey}`);
   }

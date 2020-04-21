@@ -23,5 +23,4 @@ export class DisplayComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
